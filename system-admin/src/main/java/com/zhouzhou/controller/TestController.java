@@ -1,5 +1,6 @@
 package com.zhouzhou.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -10,9 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
  * @description
  */
 @RestController
+
+@CrossOrigin //处理跨域
 public class TestController {
 
-    @GetMapping("/hello")
+    @GetMapping("/test")
     public String test(){
         return "hello";
     }

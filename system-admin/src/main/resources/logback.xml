@@ -58,10 +58,11 @@
     </appender>
 
     <!-- 系统模块日志级别控制  -->
-    <logger name="com.ydl" level="info" />
+    <logger name="com.zhouzhou" level="info" />
     <!-- Spring日志级别控制  -->
     <logger name="org.springframework" level="warn" />
 
+    <!--根日志-->
     <root level="info">
         <appender-ref ref="console" />
         <appender-ref ref="file_info" />
